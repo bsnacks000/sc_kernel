@@ -20,10 +20,10 @@ test_requirements =[
 
 setup(
     name='sc_kernel',
-    version='0.0.1',
+    version='0.0.2',
     description='A basic IPython kernel REPLwrapper for SuperCollider',
     long_description=long_description,
-    url=''
+    url='',
     author='bsnacks000',
     classifiers=[
         'Development Status :: 3 - Alpha'
@@ -32,13 +32,13 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6'
-    ]
-    packages=find_packages(exclude=['contrib', 'docs', 'tests'])
+    ],
+    packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     include_package_data=True,
     install_requires=requirements,
     entry_points={
         'console_scripts':[
-            'install_kernel=sc_kernel.__main__:install_kernel'
+            'install_kernel=sc_kernel.install:main'
         ]
     },
     test_suite='nose.collector',
