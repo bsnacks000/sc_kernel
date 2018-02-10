@@ -10,12 +10,12 @@ import signal
 
 
 class SuperColliderKernel(Kernel):
-    ''' This kernel is an adaptation from the ipykernel docs and the
-     bash_kernel example by takluyver
+    ''' This kernel is an adaptation from the ipykernel docs, the
+     bash_kernel example by takluyver and a few other REPLWrapper kernels
     '''
 
     implementation = 'SuperCollider'
-    implementation_version = '0.0.0'
+    implementation_version = '0.0.1'
     language_version = '3'
     language_info = {
         'name': 'sclang',
