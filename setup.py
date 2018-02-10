@@ -11,7 +11,8 @@ requirements=[
     'Click',
     'pexpect==4.3.1',
     'ptyprocess==0.5.2',
-    'future'
+    'future',
+    'ipykernel'
 ]
 test_requirements =[
     'nose'
@@ -19,7 +20,7 @@ test_requirements =[
 
 setup(
     name='sc_kernel',
-    version='0.0.0',
+    version='0.0.1',
     description='A basic IPython kernel REPLwrapper for SuperCollider',
     long_description=long_description,
     url=''
@@ -28,6 +29,7 @@ setup(
         'Development Status :: 3 - Alpha'
         'Intended Audience :: SuperCollider users, Developers'
         'License :: MIT License'
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6'
     ]
