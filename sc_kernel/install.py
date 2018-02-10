@@ -5,7 +5,7 @@ import json
 import os
 import sys
 
-from jupyter_client.kernelspec import KernelSpecManageer
+from jupyter_client.kernelspec import KernelSpecManager
 from IPython.utils.tempdir import TemporaryDirectory
 
 '''
@@ -15,13 +15,13 @@ This module contains the command line utility to install the kernel spec.
 
 # define kernel spec here
 kernel_json = { "argv":[sys.executable, "-m", "sc_kernel", "-f", "{connection_file}"],
-    "display_name":"SuperCollider"m
+    "display_name":"SuperCollider",
     "language": "sclang",
     "env": {"PS1":"sc3>"}
 }
 
 def install_kernel_spec(user=True, prefix=None):
-    with TemporaryDirectory as td:
+    with TemporaryDirectory() as td:
         with open(os.path.join(td, 'kernel.json'), 'w') as f:
             json.dump(kernel_json, f, sort_keys=True)
         print('Installing IPython kernel spec')
@@ -30,7 +30,7 @@ def install_kernel_spec(user=True, prefix=None):
 @click.command()
 def main():
     #TODO add install options - installs to user directory with sys.prefix (virtualenv)
-    user = True
+    user = False
     prefix = sys.prefix
     install_kernel_spec(user=user, prefix=prefix)
 
