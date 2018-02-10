@@ -1,6 +1,4 @@
+from ipykernel.kernelapp import IPKernelApp
+from .kernel import SuperColliderKernel
 
-def main():
-    pass
-
-if __name__ == '__main__':
-    main()
+IPKernelApp.launch_instance(kernel_class=SuperColliderKernel)

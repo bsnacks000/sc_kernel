@@ -11,7 +11,8 @@ requirements=[
     'Click',
     'pexpect==4.3.1',
     'ptyprocess==0.5.2',
-    'future'
+    'future',
+    'ipykernel'
 ]
 test_requirements =[
     'nose'
@@ -28,6 +29,7 @@ setup(
         'Development Status :: 3 - Alpha'
         'Intended Audience :: SuperCollider users, Developers'
         'License :: MIT License'
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6'
     ]
