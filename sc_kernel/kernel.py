@@ -15,7 +15,7 @@ class SuperColliderKernel(Kernel):
     '''
 
     implementation = 'SuperCollider'
-    implementation_version = '0.0.1'
+    implementation_version = '0.0.2'
     language_version = '3'
     language_info = {
         'name': 'sclang',

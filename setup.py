@@ -20,7 +20,7 @@ test_requirements =[
 
 setup(
     name='sc_kernel',
-    version='0.0.1',
+    version='0.0.2',
     description='A basic IPython kernel REPLwrapper for SuperCollider',
     long_description=long_description,
     url='',
