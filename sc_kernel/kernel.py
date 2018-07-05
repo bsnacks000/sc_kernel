@@ -18,7 +18,7 @@ class SuperColliderKernel(Kernel):
     implementation_version = '0.0.2'
     language_version = '3'
     language_info = {
-        'name': 'sclang',
+        'name': 'smalltalk',
         'mimetype': 'text/x-sclang',
         'file_extension': '.scd'
     }
